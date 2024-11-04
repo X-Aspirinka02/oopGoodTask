@@ -28,9 +28,9 @@ public class MainTask3 {
      */
     public void moveTo(Person person, Position destination, List<Transport> route) {
         for (Transport transport : route) {
-            transport.move(person, destination);
+            person.moveOnTransport(transport, destination);
         }
-        if(person.getPosition() == destination){
+        if(person.getPosition() != destination){
             person.walk(destination);
         }
         assert person.getPosition() == destination;

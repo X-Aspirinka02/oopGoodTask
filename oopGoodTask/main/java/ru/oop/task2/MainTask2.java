@@ -30,8 +30,8 @@ public class MainTask2 {
      * @see Position
      */
     public void moveTo(Person person, Position destination, Transport transport) {
-        transport.move(person, destination);
-        if (person.getPosition() == destination) {
+        person.moveOnTransport(transport, destination);
+        if (person.getPosition() != destination) {
             person.walk(destination);
         }
         assert person.getPosition() == destination;
