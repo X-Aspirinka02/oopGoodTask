@@ -1,8 +1,23 @@
 package ru.oop.task1;
 
 /**
- * Машина
+ * Человек
+ *
+ * @author vpyzhyanov
+ * @since 21.10.2020
  */
-public class Car {
+public interface Person {
 
+    /**
+     * Текущее местоположение
+     */
+    Position getPosition();
+
+
+    /**
+     * Пройти до указанного места из текущего местоположения
+     *
+     * @param destination место назначения
+     */
+    void walk(Position destination);
 }

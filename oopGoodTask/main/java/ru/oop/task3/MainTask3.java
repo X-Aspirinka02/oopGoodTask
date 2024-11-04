@@ -28,7 +28,7 @@ public class MainTask3 {
      */
     public void moveTo(Person person, Position destination, List<Transport> route) {
         for (Transport transport : route) {
-            person.moveOnTransport(transport, destination);
+            transport.move(person, destination);
         }
         if(person.getPosition() != destination){
             person.walk(destination);

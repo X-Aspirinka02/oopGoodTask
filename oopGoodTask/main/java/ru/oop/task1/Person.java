@@ -13,12 +13,6 @@ public interface Person {
      */
     Position getPosition();
 
-    /**
-     * Доехать по возможности до указанного местоположения на машине
-     * @param car машина, на которой человек может доехать
-     * @param destination место назначения
-     * */
-    void move(Car car, Position destination);
 
     /**
      * Пройти до указанного места из текущего местоположения
